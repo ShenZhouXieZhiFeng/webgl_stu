@@ -1,17 +1,23 @@
 <canvas id="can"></canvas>
-<script id="2d_vec_share" type="notjs">
+<script id="2d_vec_shader" type="notjs">
+
     attribute vec4 a_position;
+    
     void main()
     {
-        gl_position = a_position;
+        gl_Position = a_position;
     }
+
 </script>
 <script id="2d_frg_shader" type="notjs">
-    percision mediump float;
+    
+    precision mediump float;
+
     void main()
     {
-        gl_FragColor = vec4(0,1,0,1);
+        gl_FragColor = vec4(0, 1, 0, 1);
     }
+    
 </script>
 <script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>
 <script src="code.js"></script>
